@@ -195,9 +195,9 @@
         <artifactId>hamcrest-library</artifactId>
         <version>1.2.1</version>
         <scope>test</scope>
-      </dependency>
-
-      <dependency>
+      </dependency>        
+             
+   <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
         <version>1.8.5</version>
@@ -213,7 +213,29 @@
     <url>http://github.com/jleetutorial/maven-project</url>
   </scm>
 
-  <prerequisites>
+<distributionManagement> 
+ <repository>
+   <id>deployement</id>
+   <name>internal Release</name>
+         <url>http://3.87.56.146:8081/repository/nexus/</url>
+        </repository>
+         
+         <snapshotRepository>
+   <id>deployement</id>
+   <name>internal snapshot Releases</name>
+         <url>http://3.87.56.146:8081/repository/nexus/</url>
+         </snapshotRepository>
+         
+              <server>
+   <id>deployementRepo</id>
+   <username>admin</username>
+                       <password>admin123</password>
+                       
+                       </server>
+                       
+         
+         
+         <prerequisites>
     <maven>3.0.3</maven>
   </prerequisites>
 
