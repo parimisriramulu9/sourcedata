@@ -220,6 +220,8 @@
          <url>http://3.87.56.146:8081/repository/nexus/</url>
         </repository>
          
+         </distributionManagement>
+         
          <snapshotRepository>
    <id>deployement</id>
    <name>internal snapshot Releases</name>
